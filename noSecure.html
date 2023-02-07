@@ -1,0 +1,13 @@
+<body>
+    <script>
+        const url = new URL(window.location.href)
+        let redirect = "https://google.com"
+
+        function Navigate(){   
+            window.location.replace(`${redirect}`);
+            return false;
+        }
+
+        window.onload(Navigate())
+    </script>
+</body>

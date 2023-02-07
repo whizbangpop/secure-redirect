@@ -1,0 +1,12 @@
+<body>
+    <script>
+        const url = new URL(window.location.href)
+        let redirect = "https://google.com"
+
+        function Navigate(){   
+            window.open('http://www.google.com','_blank');window.setTimeout(function(){this.close();},1000)
+        }
+
+        window.onload(Navigate())
+    </script>
+</body>
