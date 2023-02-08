@@ -9,9 +9,9 @@ It has also been designed to close the tab, even if opening a new window was uns
 
 ---
 
-To use, paste the following HTML into the top of your body tag, and the JavaScript will do the rest!
+To use, paste the following HTML into the top of your `<head>` tag, and the JavaScript will do the rest!
 
-`<script src="https://secure-redirect.vercel.app/i.js" />`
+`<script src="https://secure-redirect.vercel.app/i.js" defer />`
 
 ---
 
