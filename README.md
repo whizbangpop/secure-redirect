@@ -9,7 +9,9 @@ It has also been designed to close the tab, even if opening a new window was uns
 
 ---
 
-To use, simple create a button that is always visable, then make the button link to https://secure-redirect.vercel.app (or https://secure-redirect.vercel.app/noSecure.html). 
+To use, paste the following HTML into the top of your body tag, and the JavaScript will do the rest!
+
+`<script src="https://secure-redirect.vercel.app/i.js" />`
 
 ---
 
