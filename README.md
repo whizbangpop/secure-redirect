@@ -1,7 +1,7 @@
 # secure-redirect
 A simple redirect service, designed to (to the extent given) securely remove the website a user was visiting.
 
-> Live Demo: https://secure-redirect.vercel.app/testpage.html
+> Live Demo: https://secure-redirect.vercel.app/
 
 ---
 
