@@ -11,8 +11,11 @@ It has also been designed to close the tab, even if opening a new window was uns
 
 To use, paste the following HTML into the bottom of your `<body>` tags on all applicable webpages, and the JavaScript will do the rest!
 
-`<script src="https://secure-redirect.vercel.app/i.js" />`
+`<script src="https://secure-redirect.vercel.app/i.js" defer />` or if down, `<script src="https://cdn.jsdelivr.net/gh/whizbangpop/secure-redirect@latest/i.js" defer />`
 
 ---
 
-While this project is licenced under an MIT licence, I would be incredibly greatfull if you could link back to this project somewhere in your website. Though, even just using the service means a lot.
+* Security is limited to what browser access is given. Browser history is not cleared as JavaScript simply does not have this functionality.
+* This is designed to clear the back button history.  
+
+**If your safety could be compromised, please make sure to clear your browser history and use a VPN.** 
