@@ -13,7 +13,7 @@ It has also been designed to close the tab, even if opening a new window was uns
 
 To use, paste the following HTML into the bottom of your `<body>` tags on all applicable webpages, and the JavaScript will do the rest!
 
-`<script src="https://secure-redirect.vercel.app/i.js" defer />` or if down, `<script src="https://cdn.jsdelivr.net/gh/whizbangpop/secure-redirect@latest/i.js" defer />`
+`<script src="https://secure-redirect.vercel.app/i.js"></script>` or if down, `<script src="https://cdn.jsdelivr.net/gh/whizbangpop/secure-redirect@latest/i.js"></script>`
 
 ---
 
