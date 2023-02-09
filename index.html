@@ -1,4 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure-Redirect</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -6,105 +13,155 @@
     <h1 id="secure-redirect">Secure-Redirect</h1>
     <h2 id="table-of-contents">Table of Contents</h2>
     <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#installing">Installing</a><ul>
-    <li><a href="#cdn">CDN</a><ul>
-    <li><a href="#the-quick-way">The Quick Way</a></li>
-    <li><a href="#the-customisable-way">The Customisable Way</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#installing">Installing</a>
+            <ul>
+                <li><a href="#cdn">CDN</a>
+                    <ul>
+                        <li><a href="#the-quick-way">The Quick Way</a></li>
+                        <li><a href="#the-customisable-way">The Customisable Way</a></li>
+                    </ul>
+                </li>
+                <li><a href="#local-install">Local Install</a>
+                    <ul>
+                        <li><a href="#quick-way-local">Quick Way (local)</a></li>
+                        <li><a href="#customisable-way-local">Customisable Way (local)</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#safety-message">Safety Message</a></li>
     </ul>
-    </li>
-    <li><a href="#local-install">Local Install</a><ul>
-    <li><a href="#quick-way-local">Quick Way (local)</a></li>
-    <li><a href="#customisable-way-local">Customisable Way (local)</a></li>
-    </ul>
-    </li>
-    </ul>
-    </li>
-    <li><a href="#safety-message">Safety Message</a></li>
-    </ul>
-    <h2 id="about-a-name-about-a-">About <a name = "about"></a></h2>
-    <p>I designed this after noticing a lot of websites relating to LGBTQ+ or abuse topics, while they did have a quick exit button, but it could still allow someone to simply press the back button. This service eliminates that worry, mostly. See <a href="#safety-warning">Safety Warning</a></p>
+    <h2 id="about-a-name-about-a-">About <a name="about"></a></h2>
+    <p>I designed this after noticing a lot of websites relating to LGBTQ+ or abuse topics, while they did have a quick
+        exit
+        button, but it could still allow someone to simply press the back button. This service eliminates that worry,
+        mostly. See <a href="#safety-warning">Safety Warning</a></p>
     <blockquote>
-    <p>Live Demo (Auto Mode): <a href="https://secure-redirect.vercel.app/testPages/auto.html">https://secure-redirect.vercel.app/testPages/auto.html</a><br>
-    Live Demo (NoCSS Mode): <a href="https://secure-redirect.vercel.app/testPages/noCss.html">https://secure-redirect.vercel.app/testPages/noCss.html</a></p>
+        <p>Live Demo (Auto Mode): <a
+                href="https://secure-redirect.vercel.app/testPages/auto.html">https://secure-redirect.vercel.app/testPages/auto.html</a><br>
+            Live Demo (NoCSS Mode): <a
+                href="https://secure-redirect.vercel.app/testPages/noCss.html">https://secure-redirect.vercel.app/testPages/noCss.html</a>
+        </p>
     </blockquote>
-    <p>(When NoCSS is referred to, it means that no <code>&lt;button&gt;</code> element is generated, and it instead searches for a button with a specific id. More info found in <a href="#installing">installing</a>.)</p>
+    <p>(When NoCSS is referred to, it means that no <code>&lt;button&gt;</code> element is generated, and it instead
+        searches for a button with a specific id. More info found in <a href="#installing">installing</a>.)</p>
     <hr>
     <h2 id="installing">Installing</h2>
     <p>If you want the easiest and most up to date way, see below.</p>
     <h3 id="cdn">CDN</h3>
     <h4 id="the-quick-way">The Quick Way</h4>
     <p>To use Secure-Redirect in the super quickest and easiest way, this is for you.</p>
-    <p>This can be done in one step. That&#39;s it. Simply paste one of the following tags at the bottom of your <code>&lt;body&gt;</code> element, and you&#39;re done.</p>
+    <p>This can be done in one step. That&#39;s it. Simply paste one of the following tags at the bottom of your
+        <code>&lt;body&gt;</code> element, and you&#39;re done.
+    </p>
     <p>Official Secure-Redirect Vercel App:<br>
-    <code>&lt;script src=&quot;https://secure-redirect.vercel.app/dist/i.js&gt;&lt;/script&gt;</code></p>
+        <code>&lt;script src=&quot;https://secure-redirect.vercel.app/dist/i.js&quot;&gt;&lt;/script&gt;</code>
+    </p>
     <p>JsDelivr CDN (Backup):<br>
-    <code>&lt;script src=&quot;https://cdn.jsdelivr.net/gh/whizbangpop/secure-redirect@latest/dist/i.js&quot;&gt;&lt;/script&gt;</code></p>
+        <code>&lt;script src=&quot;https://cdn.jsdelivr.net/gh/whizbangpop/secure-redirect@latest/dist/i.js&quot;&gt;&lt;/script&gt;</code>
+    </p>
     <h4 id="the-customisable-way">The Customisable Way</h4>
     <p>This method does take a little bit more time to setup, but gives you more control over how the button looks.</p>
     <p>First, paste one of the following tags at the bottom of your <code>&lt;body&gt;</code> element:</p>
     <p>Official Secure-Redirect Vercel App:<br>
-    <code>&lt;script src=&quot;https://secure-redirect.vercel.app/dist/nocss.i.js&gt;&lt;/script&gt;</code></p>
+        <code>&lt;script src=&quot;https://secure-redirect.vercel.app/dist/nocss.i.js&gt;&lt;/script&gt;</code>
+    </p>
     <p>JsDelivr CDN (Backup):<br>
-    <code>&lt;script src=&quot;https://cdn.jsdelivr.net/gh/whizbangpop/secure-redirect@latest/dist/nocss.i.js&quot;&gt;&lt;/script&gt;</code></p>
-    <p>Then, create a <code>&lt;button&gt;</code> element in a location of your choice, then make sure to assign it the id of <code>id=&quot;quickExitButton&quot;</code></p>
+        <code>&lt;script src=&quot;https://cdn.jsdelivr.net/gh/whizbangpop/secure-redirect@latest/dist/nocss.i.js&quot;&gt;&lt;/script&gt;</code>
+    </p>
+    <p>Then, create a <code>&lt;button&gt;</code> element in a location of your choice, then make sure to assign it the
+        id
+        of <code>id=&quot;quickExitButton&quot;</code></p>
     <p><strong>IT WILL NOT WORK OTHERWISE!</strong></p>
-    <p>Check out <a href="#pre-provided-css-styles">Pre-Provided CSS Styles</a> for some styles that are bundled with Secure-Redirect.</p>
+    <p>Check out <a href="#pre-provided-css-styles">Pre-Provided CSS Styles</a> for some styles that are bundled with
+        Secure-Redirect.</p>
     <hr>
     <h3 id="local-install">Local Install</h3>
     <p>If you want to have your&#39;s locally (possiblty to get around network restrictions), this bit is for you.</p>
-    <p>First, get the version you are looking for. There is a quick way, and a customisable way. Make sure to save it somewhere in your websites folder.</p>
+    <p>First, get the version you are looking for. There is a quick way, and a customisable way. Make sure to save it
+        somewhere in your websites folder.</p>
     <h4 id="quick-way-local-">Quick Way (local)</h4>
     <p>First, save the following file to an assets folder of some kind:
-    <a href="https://github.com/whizbangpop/secure-redirect/blob/main/dist/i.js">https://github.com/whizbangpop/secure-redirect/blob/main/dist/i.js</a></p>
+        <a
+            href="https://github.com/whizbangpop/secure-redirect/blob/main/dist/i.js">https://github.com/whizbangpop/secure-redirect/blob/main/dist/i.js</a>
+    </p>
     <p>Then, add the following code to the <strong>bottom</strong> of your <code>&lt;body&gt;</code> element:
-    <code>&lt;script src=&quot;path/to/i.js&quot; &gt;&lt;/script&gt;</code></p>
+        <code>&lt;script src=&quot;path/to/i.js&quot; &gt;&lt;/script&gt;</code>
+    </p>
     <p>And you&#39;re done! Make sure to add this to all pages where you need this button.</p>
     <h4 id="customisable-way-local-">Customisable Way (local)</h4>
     <p>This one takes a bit more time.</p>
     <p>First, save the following file to an assets folder of some kind:
-    <a href="https://github.com/whizbangpop/secure-redirect/blob/main/dist/nocss.i.js">https://github.com/whizbangpop/secure-redirect/blob/main/dist/nocss.i.js</a></p>
+        <a
+            href="https://github.com/whizbangpop/secure-redirect/blob/main/dist/nocss.i.js">https://github.com/whizbangpop/secure-redirect/blob/main/dist/nocss.i.js</a>
+    </p>
     <p>Then, add the following code to the <strong>bottom</strong> of your <code>&lt;body&gt;</code> element:
-    <code>&lt;script src=&quot;path/to/nocss.i.js&quot; &gt;&lt;/script&gt;</code></p>
-    <p>Then, create a button element somewhere inside of your <code>&lt;body&gt;</code> tag, giving it an id of <code>quickExitButton</code>. <br>
-    <strong>VERY IMPORTANT!</strong> The JavaScript is listening for button clicks for <strong>any</strong> button with this id, so make sure to not accidentally use it.</p>
+        <code>&lt;script src=&quot;path/to/nocss.i.js&quot; &gt;&lt;/script&gt;</code>
+    </p>
+    <p>Then, create a button element somewhere inside of your <code>&lt;body&gt;</code> tag, giving it an id of
+        <code>quickExitButton</code>. <br>
+        <strong>VERY IMPORTANT!</strong> The JavaScript is listening for button clicks for <strong>any</strong> button
+        with
+        this id, so make sure to not accidentally use it.
+    </p>
     <hr>
     <h3 id="pre-provided-css-styles">Pre-provided CSS Styles</h3>
-    <p>To use one of the CSS styles shiped with Secure-Redirect, add a link to one of the following CSS files, then add the specified class to the exit button.</p>
+    <p>To use one of the CSS styles shiped with Secure-Redirect, add a link to one of the following CSS files, then add
+        the
+        specified class to the exit button.</p>
     <table>
-    <thead>
-    <tr>
-    <th>CSS Link</th>
-    <th>Backup CSS Link</th>
-    <th>Class Name</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td><a href="https://secure-redirect.vercel.app/dist/css/playful.css">https://secure-redirect.vercel.app/dist/css/playful.css</a></td>
-    <td><a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#111;&#58;&#104;&#x74;&#116;&#x70;&#115;&#x3a;&#47;&#47;&#x63;&#100;&#x6e;&#46;&#106;&#x73;&#100;&#101;&#x6c;&#105;&#x76;&#x72;&#x2e;&#x6e;&#x65;&#116;&#x2f;&#x67;&#104;&#x2f;&#x77;&#104;&#x69;&#122;&#98;&#97;&#110;&#103;&#x70;&#x6f;&#112;&#47;&#115;&#101;&#99;&#x75;&#114;&#x65;&#45;&#x72;&#101;&#100;&#x69;&#x72;&#x65;&#99;&#116;&#64;&#x6c;&#x61;&#x74;&#101;&#115;&#116;&#x2f;&#x64;&#105;&#115;&#116;&#47;&#99;&#x73;&#x73;&#47;&#112;&#108;&#97;&#x79;&#x66;&#117;&#x6c;&#x2e;&#99;&#115;&#115;">&#104;&#x74;&#116;&#x70;&#115;&#x3a;&#47;&#47;&#x63;&#100;&#x6e;&#46;&#106;&#x73;&#100;&#101;&#x6c;&#105;&#x76;&#x72;&#x2e;&#x6e;&#x65;&#116;&#x2f;&#x67;&#104;&#x2f;&#x77;&#104;&#x69;&#122;&#98;&#97;&#110;&#103;&#x70;&#x6f;&#112;&#47;&#115;&#101;&#99;&#x75;&#114;&#x65;&#45;&#x72;&#101;&#100;&#x69;&#x72;&#x65;&#99;&#116;&#64;&#x6c;&#x61;&#x74;&#101;&#115;&#116;&#x2f;&#x64;&#105;&#115;&#116;&#47;&#99;&#x73;&#x73;&#47;&#112;&#108;&#97;&#x79;&#x66;&#117;&#x6c;&#x2e;&#99;&#115;&#115;</a></td>
-    <td><code>class=&quot;playful&quot;</code></td>
-    </tr>
-    <tr>
-    <td><a href="https://secure-redirect.vercel.app/dist/css/minimal.css">https://secure-redirect.vercel.app/dist/css/minimal.css</a></td>
-    <td><a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#x68;&#116;&#x74;&#112;&#x73;&#58;&#x2f;&#47;&#99;&#100;&#x6e;&#46;&#106;&#x73;&#100;&#101;&#108;&#105;&#118;&#114;&#x2e;&#110;&#101;&#116;&#x2f;&#x67;&#x68;&#x2f;&#x77;&#x68;&#x69;&#x7a;&#98;&#x61;&#x6e;&#x67;&#112;&#111;&#112;&#47;&#x73;&#x65;&#x63;&#x75;&#x72;&#101;&#45;&#114;&#101;&#100;&#x69;&#x72;&#101;&#99;&#x74;&#x40;&#108;&#x61;&#116;&#101;&#115;&#x74;&#x2f;&#100;&#105;&#x73;&#x74;&#47;&#99;&#115;&#115;&#47;&#x6d;&#x69;&#x6e;&#105;&#109;&#97;&#x6c;&#46;&#99;&#x73;&#115;">&#x68;&#116;&#x74;&#112;&#x73;&#58;&#x2f;&#47;&#99;&#100;&#x6e;&#46;&#106;&#x73;&#100;&#101;&#108;&#105;&#118;&#114;&#x2e;&#110;&#101;&#116;&#x2f;&#x67;&#x68;&#x2f;&#x77;&#x68;&#x69;&#x7a;&#98;&#x61;&#x6e;&#x67;&#112;&#111;&#112;&#47;&#x73;&#x65;&#x63;&#x75;&#x72;&#101;&#45;&#114;&#101;&#100;&#x69;&#x72;&#101;&#99;&#x74;&#x40;&#108;&#x61;&#116;&#101;&#115;&#x74;&#x2f;&#100;&#105;&#x73;&#x74;&#47;&#99;&#115;&#115;&#47;&#x6d;&#x69;&#x6e;&#105;&#109;&#97;&#x6c;&#46;&#99;&#x73;&#115;</a></td>
-    <td><code>class=&quot;minimal&quot;</code></td>
-    </tr>
-    <tr>
-    <td><a href="https://secure-redirect.vercel.app/dist/css/basic.css">https://secure-redirect.vercel.app/dist/css/basic.css</a></td>
-    <td><a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#104;&#x74;&#116;&#112;&#x73;&#x3a;&#x2f;&#x2f;&#99;&#x64;&#110;&#46;&#106;&#115;&#100;&#x65;&#108;&#x69;&#118;&#x72;&#x2e;&#x6e;&#x65;&#116;&#47;&#x67;&#104;&#x2f;&#119;&#x68;&#105;&#x7a;&#x62;&#x61;&#x6e;&#103;&#112;&#x6f;&#112;&#x2f;&#115;&#101;&#99;&#x75;&#x72;&#101;&#45;&#x72;&#101;&#x64;&#105;&#x72;&#x65;&#x63;&#x74;&#64;&#x6c;&#x61;&#x74;&#x65;&#115;&#x74;&#x2f;&#100;&#x69;&#115;&#x74;&#x2f;&#x63;&#115;&#x73;&#47;&#98;&#97;&#x73;&#x69;&#99;&#x2e;&#x63;&#115;&#115;">&#104;&#x74;&#116;&#112;&#x73;&#x3a;&#x2f;&#x2f;&#99;&#x64;&#110;&#46;&#106;&#115;&#100;&#x65;&#108;&#x69;&#118;&#x72;&#x2e;&#x6e;&#x65;&#116;&#47;&#x67;&#104;&#x2f;&#119;&#x68;&#105;&#x7a;&#x62;&#x61;&#x6e;&#103;&#112;&#x6f;&#112;&#x2f;&#115;&#101;&#99;&#x75;&#x72;&#101;&#45;&#x72;&#101;&#x64;&#105;&#x72;&#x65;&#x63;&#x74;&#64;&#x6c;&#x61;&#x74;&#x65;&#115;&#x74;&#x2f;&#100;&#x69;&#115;&#x74;&#x2f;&#x63;&#115;&#x73;&#47;&#98;&#97;&#x73;&#x69;&#99;&#x2e;&#x63;&#115;&#115;</a></td>
-    <td><code>class=&quot;basic&quot;</code></td>
-    </tr>
-    </tbody>
+        <thead>
+            <tr>
+                <th>CSS Link</th>
+                <th>Backup CSS Link</th>
+                <th>Class Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a
+                        href="https://secure-redirect.vercel.app/dist/css/playful.css">https://secure-redirect.vercel.app/dist/css/playful.css</a>
+                </td>
+                <td><a
+                        href="&#x6d;&#97;&#105;&#108;&#x74;&#x6f;&#x3a;&#x68;&#x74;&#116;&#112;&#115;&#x3a;&#x2f;&#47;&#x63;&#100;&#x6e;&#x2e;&#x6a;&#115;&#x64;&#101;&#x6c;&#x69;&#x76;&#x72;&#46;&#x6e;&#x65;&#116;&#47;&#103;&#104;&#x2f;&#x77;&#x68;&#x69;&#x7a;&#98;&#97;&#x6e;&#x67;&#x70;&#x6f;&#x70;&#47;&#115;&#101;&#x63;&#117;&#x72;&#101;&#x2d;&#x72;&#x65;&#100;&#x69;&#x72;&#x65;&#99;&#116;&#x40;&#108;&#97;&#116;&#101;&#115;&#116;&#x2f;&#x64;&#105;&#115;&#116;&#47;&#x63;&#115;&#115;&#47;&#x70;&#108;&#97;&#121;&#102;&#117;&#108;&#x2e;&#99;&#115;&#x73;">&#x68;&#x74;&#116;&#112;&#115;&#x3a;&#x2f;&#47;&#x63;&#100;&#x6e;&#x2e;&#x6a;&#115;&#x64;&#101;&#x6c;&#x69;&#x76;&#x72;&#46;&#x6e;&#x65;&#116;&#47;&#103;&#104;&#x2f;&#x77;&#x68;&#x69;&#x7a;&#98;&#97;&#x6e;&#x67;&#x70;&#x6f;&#x70;&#47;&#115;&#101;&#x63;&#117;&#x72;&#101;&#x2d;&#x72;&#x65;&#100;&#x69;&#x72;&#x65;&#99;&#116;&#x40;&#108;&#97;&#116;&#101;&#115;&#116;&#x2f;&#x64;&#105;&#115;&#116;&#47;&#x63;&#115;&#115;&#47;&#x70;&#108;&#97;&#121;&#102;&#117;&#108;&#x2e;&#99;&#115;&#x73;</a>
+                </td>
+                <td><code>class=&quot;playful&quot;</code></td>
+            </tr>
+            <tr>
+                <td><a
+                        href="https://secure-redirect.vercel.app/dist/css/minimal.css">https://secure-redirect.vercel.app/dist/css/minimal.css</a>
+                </td>
+                <td><a
+                        href="&#109;&#97;&#x69;&#108;&#x74;&#111;&#x3a;&#x68;&#116;&#116;&#x70;&#115;&#x3a;&#47;&#47;&#x63;&#x64;&#x6e;&#46;&#106;&#x73;&#100;&#x65;&#x6c;&#105;&#118;&#x72;&#46;&#x6e;&#x65;&#116;&#x2f;&#103;&#x68;&#47;&#x77;&#104;&#105;&#x7a;&#x62;&#97;&#110;&#103;&#x70;&#x6f;&#112;&#x2f;&#x73;&#x65;&#99;&#117;&#114;&#x65;&#45;&#114;&#x65;&#100;&#105;&#x72;&#x65;&#99;&#116;&#x40;&#x6c;&#x61;&#116;&#101;&#115;&#116;&#x2f;&#x64;&#105;&#x73;&#116;&#x2f;&#99;&#x73;&#x73;&#x2f;&#x6d;&#105;&#110;&#x69;&#x6d;&#x61;&#108;&#46;&#99;&#115;&#x73;">&#x68;&#116;&#116;&#x70;&#115;&#x3a;&#47;&#47;&#x63;&#x64;&#x6e;&#46;&#106;&#x73;&#100;&#x65;&#x6c;&#105;&#118;&#x72;&#46;&#x6e;&#x65;&#116;&#x2f;&#103;&#x68;&#47;&#x77;&#104;&#105;&#x7a;&#x62;&#97;&#110;&#103;&#x70;&#x6f;&#112;&#x2f;&#x73;&#x65;&#99;&#117;&#114;&#x65;&#45;&#114;&#x65;&#100;&#105;&#x72;&#x65;&#99;&#116;&#x40;&#x6c;&#x61;&#116;&#101;&#115;&#116;&#x2f;&#x64;&#105;&#x73;&#116;&#x2f;&#99;&#x73;&#x73;&#x2f;&#x6d;&#105;&#110;&#x69;&#x6d;&#x61;&#108;&#46;&#99;&#115;&#x73;</a>
+                </td>
+                <td><code>class=&quot;minimal&quot;</code></td>
+            </tr>
+            <tr>
+                <td><a
+                        href="https://secure-redirect.vercel.app/dist/css/basic.css">https://secure-redirect.vercel.app/dist/css/basic.css</a>
+                </td>
+                <td><a
+                        href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#x68;&#116;&#x74;&#x70;&#x73;&#x3a;&#47;&#x2f;&#x63;&#x64;&#110;&#x2e;&#106;&#x73;&#100;&#x65;&#108;&#x69;&#x76;&#x72;&#x2e;&#x6e;&#x65;&#116;&#47;&#103;&#104;&#x2f;&#119;&#104;&#105;&#122;&#98;&#x61;&#x6e;&#x67;&#112;&#x6f;&#x70;&#47;&#x73;&#x65;&#x63;&#x75;&#x72;&#101;&#x2d;&#114;&#x65;&#x64;&#x69;&#114;&#x65;&#99;&#x74;&#64;&#x6c;&#97;&#116;&#x65;&#115;&#116;&#47;&#100;&#x69;&#x73;&#x74;&#47;&#x63;&#115;&#115;&#47;&#98;&#97;&#x73;&#x69;&#99;&#46;&#x63;&#115;&#115;">&#x68;&#116;&#x74;&#x70;&#x73;&#x3a;&#47;&#x2f;&#x63;&#x64;&#110;&#x2e;&#106;&#x73;&#100;&#x65;&#108;&#x69;&#x76;&#x72;&#x2e;&#x6e;&#x65;&#116;&#47;&#103;&#104;&#x2f;&#119;&#104;&#105;&#122;&#98;&#x61;&#x6e;&#x67;&#112;&#x6f;&#x70;&#47;&#x73;&#x65;&#x63;&#x75;&#x72;&#101;&#x2d;&#114;&#x65;&#x64;&#x69;&#114;&#x65;&#99;&#x74;&#64;&#x6c;&#97;&#116;&#x65;&#115;&#116;&#47;&#100;&#x69;&#x73;&#x74;&#47;&#x63;&#115;&#115;&#47;&#98;&#97;&#x73;&#x69;&#99;&#46;&#x63;&#115;&#115;</a>
+                </td>
+                <td><code>class=&quot;basic&quot;</code></td>
+            </tr>
+        </tbody>
     </table>
     <h2 id="safety-message">Safety Message</h2>
     <ul>
-    <li><p>Security is limited to what browser access is given. Browser history is not cleared as JavaScript simply does not have this functionality.</p>
-    </li>
-    <li><p>This is designed to clear the back button history.  </p>
-    </li>
+        <li>
+            <p>Security is limited to what browser access is given. Browser history is not cleared as JavaScript simply
+                does
+                not have this functionality.</p>
+        </li>
+        <li>
+            <p>This is designed to clear the back button history. </p>
+        </li>
     </ul>
-    <p><strong>If your safety could be compromised, please make sure to clear your browser history and use a VPN.</strong></p>
-    
-
+    <p><strong>If your safety could be compromised, please make sure to clear your browser history and use a
+            VPN.</strong>
+    </p>
 </body>
+
+</html>

@@ -36,7 +36,7 @@ To use Secure-Redirect in the super quickest and easiest way, this is for you.
 This can be done in one step. That's it. Simply paste one of the following tags at the bottom of your `<body>` element, and you're done.
 
 Official Secure-Redirect Vercel App:<br>
-`<script src="https://secure-redirect.vercel.app/dist/i.js></script>`
+`<script src="https://secure-redirect.vercel.app/dist/i.js"></script>`
 
 JsDelivr CDN (Backup):<br>
 `<script src="https://cdn.jsdelivr.net/gh/whizbangpop/secure-redirect@latest/dist/i.js"></script>`
