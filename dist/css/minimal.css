@@ -1,0 +1,31 @@
+/* Found @ https://uiverse.io/Jedi-hongbin/modern-sloth-8 */
+/* Modified to remove SVG element as didn't feel it fitted */
+
+/* Recommended for websites with a grey or black background, or for a dark mode */
+
+.minimal {
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+}
+
+.minimal > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+}
+
+.minimal:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+}
