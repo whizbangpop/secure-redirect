@@ -17,8 +17,8 @@
 
 I designed this after noticing a lot of websites relating to LGBTQ+ or abuse topics, while they did have a quick exit button, but it could still allow someone to simply press the back button. This service eliminates that worry, mostly. See [Safety Warning](#safety-warning)
 
-> Live Demo (Auto Mode): <https://secure-redirect.vercel.app/testPages/auto.html><br>
-> Live Demo (NoCSS Mode): <https://secure-redirect.vercel.app/testPages/noCss.html>
+> Live Demo (Auto Mode): <https://cdn.quickexit.cc/testPages/auto.html><br>
+> Live Demo (NoCSS Mode): <https://cdn.quickexit.cc/testPages/noCss.html>
 
 (When NoCSS is referred to, it means that no `<button>` element is generated, and it instead searches for a button with a specific id. More info found in [installing](#installing).)
 
@@ -37,7 +37,7 @@ To use Secure-Redirect in the super quickest and easiest way, this is for you.
 This can be done in one step. That's it. Simply paste one of the following tags at the bottom of your `<body>` element, and you're done.
 
 Official Secure-Redirect Vercel App:<br>
-`<script src="https://secure-redirect.vercel.app/dist/i.js"></script>`
+`<script src="https://cdn.quickexit.cc/dist/i.js"></script>`
 
 JsDelivr CDN (Backup):<br>
 `<script src="https://cdn.jsdelivr.net/gh/whizbangpop/secure-redirect@latest/dist/i.js"></script>`
@@ -49,7 +49,7 @@ This method does take a little bit more time to setup, but gives you more contro
 First, paste one of the following tags at the bottom of your `<body>` element:
 
 Official Secure-Redirect Vercel App:<br>
-`<script src="https://secure-redirect.vercel.app/dist/nocss.i.js></script>`
+`<script src="https://cdn.quickexit.cc/dist/nocss.i.js></script>`
 
 JsDelivr CDN (Backup):<br>
 `<script src="https://cdn.jsdelivr.net/gh/whizbangpop/secure-redirect@latest/dist/nocss.i.js"></script>`
@@ -99,9 +99,9 @@ To use one of the CSS styles shiped with Secure-Redirect, add a link to one of t
 
 | CSS Link | Backup CSS Link | Class Name |
 | ----- | ----- | ----- |
-| <https://secure-redirect.vercel.app/dist/css/playful.css> | <https://cdn.jsdelivr.net/gh/whizbangpop/secure-redirect@latest/dist/css/playful.css> | `class="playful"` |
-| <https://secure-redirect.vercel.app/dist/css/minimal.css> | <https://cdn.jsdelivr.net/gh/whizbangpop/secure-redirect@latest/dist/css/minimal.css> | `class="minimal"` |
-| <https://secure-redirect.vercel.app/dist/css/basic.css> | <https://cdn.jsdelivr.net/gh/whizbangpop/secure-redirect@latest/dist/css/basic.css> | `class="basic"` |
+| <https://cdn.quickexit.cc/dist/css/playful.css> | <https://cdn.jsdelivr.net/gh/whizbangpop/secure-redirect@latest/dist/css/playful.css> | `class="playful"` |
+| <https://cdn.quickexit.cc/dist/css/minimal.css> | <https://cdn.jsdelivr.net/gh/whizbangpop/secure-redirect@latest/dist/css/minimal.css> | `class="minimal"` |
+| <https://cdn.quickexit.cc/dist/css/basic.css> | <https://cdn.jsdelivr.net/gh/whizbangpop/secure-redirect@latest/dist/css/basic.css> | `class="basic"` |
 
 ## Safety Message
 
@@ -124,7 +124,5 @@ Once it is clicked, that is when this quite simple bit of code kicks in. **This 
 Basically, browsers doesn't like JavaScript closing tabs all willy nilly. So, I had to comprimise. By setting the webpage to *look* like a different website (currently Wikipedia as it's very commonly visited), it means even if the tab can't be closed, it's much less obvious to someone taking a look. The reason I used the phrasing I did, was because browsers are weird. Sometimes the tab closes, other times it doesn't. And I have no idea why. So this helps to cover up browsing history. 
 
 I managed to increase my success rates (somewhat) by instead of having websites redirect to a webpage, it instead loads the JavaScript in on every page load where the code is called. This seems to help some of the time as this *sometimes* makes the browser think that the JavaScript created the tab. I have dones hours of testing and I can't currently seem to find a pattern of when and why it can sometime close the tab, but other times can't.
-
-I'm looking into buying a custom domain so I can shorten it down from the quite lengthy `secure-redirect.vercel.app` to something shorter. I won't say what I'm looking at as to make sure no one is a pain and buys the domain before me. That would make me very upset.
 
 That's my ranting done for now. Hope this project can be of some use to someone out there some day :>
